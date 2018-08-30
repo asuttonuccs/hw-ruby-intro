@@ -88,6 +88,12 @@ class BookInStock
         end
 
     end
-
+    def price_as_string()
+        price = self.price
+        price = price.to_s
+        return "$%0.2f" % [price]
+        
+        
+    end
 end
 
